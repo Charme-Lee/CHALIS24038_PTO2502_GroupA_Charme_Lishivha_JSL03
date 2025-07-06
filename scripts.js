@@ -80,3 +80,30 @@ function addTask() {
 
   tasks.push(newTask);
 }
+
+// Filters the main tasks array to return only tasks marked as "done".
+
+function filterCompletedTasks() {
+  return tasks.filter((task) => task.status === "done");
+}
+//  Logs all tasks i.e completed tasks to the console.
+function logTasksToConsole() {
+  console.log("All Tasks:", tasks);
+  const completedTasks = filterCompletedTasks();
+  console.log("Completed Tasks:", completedTasks);
+}
+
+// Executes when the web page has fully loaded.
+window.onload = function () {
+  // Prompts the user to add tasks until the task threshold is met.
+  if (tasks.length < taskLimit) {
+    const remainingTasks = taskLimit - tasks.length;
+    for (let i = 0; i < remainingTasks; i++) {
+      addTask();
+    }
+  }
+  // This specifically triggers the task limit alert.
+  addTask();
+  // Logs all tasks to the console for review.
+  logTasksToConsole();
+};
