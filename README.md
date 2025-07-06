@@ -57,19 +57,27 @@ It includes logic to handle user interaction for adding tasks, prompting for the
 - ✅ Semantic HTML and well-commented JavaScript for easy maintenance
 - ✅Favicon Assets – SVG Icons
 
-### Updates & Enhancements:
+### New Features:
 
-- \*\*Task Storage & Management:
-- \*\*Each task is stored as a structured object in an array, with a unique ID. Completed tasks are filtered and displayed using a filterCompletedTasks() function.
+- Added Features
+  📦 Structured Task Storage: Tasks are stored as objects within an array for organized data management.
 
-- \*\*Console Output:
-- \*\*All tasks and completed tasks are logged clearly in the developer console for easy tracking.
+- ➕ Add New Tasks: Users can add up to three new tasks to the existing list.
 
-- \*\*Clean Code Practices:
-- \*\*Clear naming conventions and concise comments improve readability and maintainability across HTML, CSS, and JavaScript.
+- 🆔 Unique Task IDs: Each new task is assigned a unique incremental ID, continuing from the last task in the array.
 
-* \*\*Prompt-Based Task Entry:
-  - \*\*Users can add up to three tasks by entering a title, description, and status. Input is validated for correct status (case-insensitive), with alerts shown if the task limit is reached.
+- 📝 Prompt-Based Input: Users are prompted to enter title, description, and status, which are saved in the task object.
+
+- 🚫 Task Limit Alert: When the task limit is reached, users see an alert:
+  "There are enough tasks on your board, please check them in the console."
+
+- 🔍 Filter Completed Tasks: A dedicated function filters and displays only tasks with status "done".
+
+- 📋 Console Logging:
+
+-Logs all tasks to the console under a clear label.
+
+- Logs only completed tasks under a "Completed Tasks" section for quick access.
 
 ## 🛠️ Technologies Used
 
@@ -85,14 +93,14 @@ It includes logic to handle user interaction for adding tasks, prompting for the
 
 ```bash
 git clone
-https://github.com/Charme-Lee/CHALIS24038_PTO2502_GroupA_Charme_Lishivha_JSL02.git
+https://github.com/Charme-Lee/CHALIS24038_PTO2502_GroupA_Charme_Lishivha_JSL03.git
 ```
 
 2. **Open the Project Folder**
 
 ```bash
 cd
-CHALIS24038_PTO2502_GroupA_Charme_Lishivha_JSL02
+CHALIS24038_PTO2502_GroupA_Charme_Lishivha_JSL03
 ```
 
 3. 🚀 **Launch the App**
