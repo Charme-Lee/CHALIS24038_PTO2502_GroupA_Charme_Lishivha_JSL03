@@ -20,7 +20,6 @@ const initialTasks = [
     status: "done",
   },
 ];
-d;
 
 // Initialize the main tasks array
 let tasks = [...initialTasks];
