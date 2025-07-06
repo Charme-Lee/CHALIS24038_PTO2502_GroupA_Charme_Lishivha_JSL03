@@ -51,7 +51,7 @@ function addTask(){
     let newTaskStatus = prompt("Enter task status (todo, doing, done):").toLowerCase();
     if (newTaskStatus === null) return;
   
-    // Input validation loop to ensure the task status is one of the allowed values.
+    // Input validation loop to ensure the task status is one of the allowed values
     while (newTaskStatus !== "todo" && newTaskStatus !== "doing" && newTaskStatus !== "done") {
       alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
       newTaskStatus = prompt("Enter task status (todo, doing, done):").toLowerCase();
