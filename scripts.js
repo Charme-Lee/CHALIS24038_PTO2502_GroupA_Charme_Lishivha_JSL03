@@ -20,47 +20,17 @@ const initialTasks = [
     status: "done",
   },
 ];
-document.addEventListener("DOMContentLoaded", () => {
-  // Prompt user for task details
-  function getTaskDetails(task) {
-    const taskTitle = prompt(`Enter the title for Task ${task}:`);
-    const taskDescription = prompt(`Enter the description for Task ${task}:`);
+d;
 
-    let taskStatus = prompt(
-      `Enter the status for Task ${task} (todo, doing, done):`
-    );
+// Initialize the main tasks array
+let tasks = [...initialTasks];
 
-    // Change status to lowercase
-    taskStatus = taskStatus.toLowerCase();
+// Defines the threshhold for the tasks allowed
+// Set to 6 to accommodate 3 initial tasks + 3 new tasks.
+const taskLimit = 6;
 
-    // Repeat the prompt until a valid status is received
-    while (!["todo", "doing", "done"].includes(taskStatus)) {
-      alert("Invalid status! Please enter one of: todo, doing, done.");
-      taskStatus = prompt(
-        `Enter the status for Task ${task} (todo, doing, done):`
-      ).toLowerCase();
-    }
-
-    return {
-      title: taskTitle,
-      description: taskDescription,
-      status: taskStatus,
-    };
-  }
-
-  // Record the task details
-  const FirstTask = getTaskDetails(1);
-  const SecondTask = getTaskDetails(2);
-
-  const allTasks = [FirstTask, SecondTask];
-  const completedTasks = allTasks.filter((task) => task.status === "done");
-
-  // Log outputs
-  if (completedTasks.length > 0) {
-    completedTasks.forEach((task) => {
-      console.log(`Title: "${task.title}", Status: "done"`);
-    });
-  } else {
-    console.log("No tasks completed, let's get to work!");
-  }
-});
+/*
+Manages user input for creating a new task.
+Requests title, description, and status, ensuring the status is valid.
+Checks if the task limit has been reached and notifies the user if so. 
+*/
