@@ -2,8 +2,6 @@
 
 ## Overview
 
-This project involves creating a **simple task management system** where users can add **up to three new tasks** to an existing task array. Tasks are **stored as objects in an array**, each with a **unique incremental ID**. Users will enter task details via prompts, and the system will allow filtering to view only completed tasks. The project focuses on **array manipulation, user interaction via prompts and alerts, and console logging for task management**.
-
 ## Key Objectives
 
 ### Logic & User Interaction
@@ -43,7 +41,12 @@ A **structured and limited task management system** that enables users to add, r
 This project presents a visually precise Kanban board designed to closely reflect the original Figma design specifications. The user interface features clearly defined task columns, a static sidebar for streamlined navigation, and a cohesive visual theme that ensures a polished and professional experience across both desktop and mobile platforms.
 The application is a responsive, browser-based task manager that enables users to visually organize and monitor tasks through three workflow stages: TODO, DOING, and DONE. With its clean layout and interactive prompt-based task input, it provides an intuitive and accessible entry point to effective task management.
 
-## ✨ Features
+This project involves creating a simple task management system where users can add up to three new tasks to an existing task array. Tasks are stored as objects in an array, each with a unique incremental ID. Users will enter task details via prompts, and the system will allow filtering to view only completed tasks. The project focuses on array manipulation, user interaction via prompts and alerts, and console logging for task management.
+It includes logic to handle user interaction for adding tasks, prompting for the task's title, description, and status, while validating input to ensure a correct status is entered. The system also enforces a task limit, alerting the user if the maximum number of tasks has been reached.
+
+## ✨ Key Features & Updates
+
+### Core features
 
 - ✅ Responsive layout with a three-column Kanban board
 - ✅ Console logs completed (`done`) tasks only
@@ -53,6 +56,20 @@ The application is a responsive, browser-based task manager that enables users t
 - ✅ Alerts and re-prompting for invalid statuses
 - ✅ Semantic HTML and well-commented JavaScript for easy maintenance
 - ✅Favicon Assets – SVG Icons
+
+### Updates & Enhancements:
+
+- \*\*Task Storage & Management:
+- \*\*Each task is stored as a structured object in an array, with a unique ID. Completed tasks are filtered and displayed using a filterCompletedTasks() function.
+
+- \*\*Console Output:
+- \*\*All tasks and completed tasks are logged clearly in the developer console for easy tracking.
+
+- \*\*Clean Code Practices:
+- \*\*Clear naming conventions and concise comments improve readability and maintainability across HTML, CSS, and JavaScript.
+
+* \*\*Prompt-Based Task Entry:
+  - \*\*Users can add up to three tasks by entering a title, description, and status. Input is validated for correct status (case-insensitive), with alerts shown if the task limit is reached.
 
 ## 🛠️ Technologies Used
 
