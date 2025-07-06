@@ -133,57 +133,33 @@ Each task has 3 prompts:
 
 ![title prompt](./explainer-images/consolelog.png)
 
-## 📖 Usage Examples
-
-### 👍 Example 1: A complete/ done task
+## 📖 Usage Example 👍
 
 **Prompt Input(s):**
 
 - Task 1:
 
-  - Title: `Make corrections to JSL01`
-
-  - Description: `JSL01`
-  - Status: `DONE`
-
-- Task 2:
-  - Title: `Project 2`
-  - Description: `JSL02`
+  - Title: `Gym`
+  - Description: `Work those muscles`
   - Status: `todo`
 
-**Console Output:**
-
-```
-Title: "Make corrections to JSL01", Status: "done"
-```
-
-![invalid status](./explainer-images/completed%20task%20log.png)
-
----
-
-### ❌ Example: No Tasks Completed/Done
-
-**Prompt Input(s):**
-
-- Task 1:
-  - Title: `Project 1`
-  - Description: `JSL01`
-  - Status: `TODO`
 - Task 2:
-  - Title: `Project 2`
-  - Description: `JSL02`
-  - Status: `Doing`
+  - Title: `Sleep`
+  - Description: `Rest that bod`
+  - Status: `done`
 
 **Console Output:**
 
+```js
+📋 All Tasks:
+[
+  0:{ id: 1, title: "Gym", description: `Work those muscles`, status: "todo"},
+ 1:{id: 2, title: "Sleep", description: `Rest that bod`, status: "done"}
+]
+
+✅ Completed Tasks:
+[
+  { id: 2, title: "Sleep", description: `Rest that bod`, status: "done"}
+]
+
 ```
-No tasks completed, let's get to work!
-```
-
-![invalid status](./explainer-images/no%20completed%20tasks%20log.png)
-
-**Invalid Status:**
-
-- If the user enters a status other than `todo`, `doing` or `done`, the program will alert the user of this and return to prompting them to enter a status.
-
-  ![invalid status](./explainer-images/invalid%20status.png)
