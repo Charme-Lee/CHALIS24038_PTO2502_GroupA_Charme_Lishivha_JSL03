@@ -1,35 +1,3 @@
-# JSL03 Project Brief: Console-Based Task Manager
-
-## Overview
-
-## Key Objectives
-
-### Logic & User Interaction
-
-- Store tasks as **objects inside an array** for structured data management.
-- Allow users to **add up to three new tasks** to the existing task list.
-- Ensure each new task has a **unique incremental ID** based on the last task in the array.
-- Prompt users to enter **task details (title, description, status)** and store them in an object.
-- Alert users when they reach the task limit with the message:
-  _"There are enough tasks on your board, please check them in the console."_
-  Implement a **filter function** to display only tasks with the status `"done"`.
-- Log **all tasks** in the console with a clear label for easy review.
-- Log **only completed tasks** (status: `"done"`) in the console under a "Completed Tasks" label for quick reference.
-
-## Code Quality & Maintainability
-
-- Use meaningful variable and function names to ensure readability and maintainability.
-- Follow consistent indentation and formatting to enhance code clarity.
-- Include comments explaining key logic and functionality to support future modifications.
-
-## Expected Outcome
-
-A **structured and limited task management system** that enables users to add, review, and filter tasks efficiently while ensuring **clean, well-documented, and maintainable code.**
-
-**Console Log of all and completed tasks**
-
-![console log](./explainer-images/console%20log.png)
-
 # JSL03 Project: Kanban (Task Manager)
 
 ## 🚀 Brief : Console-Based Task Manager
@@ -74,8 +42,6 @@ It includes logic to handle user interaction for adding tasks, prompting for the
 - 🔍 Filter Completed Tasks: A dedicated function filters and displays only tasks with status "done".
 
 - 📋 Console Logging:
-
--Logs all tasks to the console under a clear label.
 
 - Logs only completed tasks under a "Completed Tasks" section for quick access.
 
@@ -125,7 +91,7 @@ Each task has 3 prompts:
 - **Status**:
   - Valid options: `todo`, `doing`, `done`
   - If the input is invalid, an alert will appear and you’ll be asked to re-enter it.
-    -There is a limit set for the number of task that can be added, once reached, user will be alerted that additional tasks cannot be added.
+  - There is a limit set for the number of task that can be added, once reached, user will be alerted that additional tasks cannot be added.
 
 ### 💻 Console Output (Browsers Dev tools)
 
