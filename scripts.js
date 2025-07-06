@@ -34,7 +34,7 @@ Manages user input for creating a new task.
 Requests title, description, and status, ensuring the status is valid.
 Checks if the task limit has been reached and notifies the user if so. 
 */
-function addTask(){
+function addTask() {
   // This fulfills the requirement to alert the user when the limit is reached.
   if (tasks.length >= taskLimit) {
     alert(
@@ -71,3 +71,12 @@ function addTask(){
 
   // Create a unique incremental ID for the new task based on the last task's ID.
   const lastTaskId = tasks.length > 0 ? tasks[tasks.length - 1].id : 0;
+  const newTask = {
+    id: lastTaskId + 1,
+    title: newTaskTitle,
+    description: newTaskDescription,
+    status: newTaskStatus,
+  };
+
+  tasks.push(newTask);
+}
