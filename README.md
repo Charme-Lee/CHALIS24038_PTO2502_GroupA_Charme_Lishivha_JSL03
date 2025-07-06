@@ -143,8 +143,6 @@ Each task has 3 prompts:
 
   - Title: `Make corrections to JSL01`
 
-    ![title prompt](./explainer-images/consolelog.png)
-
   - Description: `JSL01`
   - Status: `DONE`
 
