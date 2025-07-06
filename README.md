@@ -125,20 +125,13 @@ Each task has 3 prompts:
 - **Status**:
   - Valid options: `todo`, `doing`, `done`
   - If the input is invalid, an alert will appear and you’ll be asked to re-enter it.
+    -There is a limit set for the number of task that can be added, once reached, user will be alerted that additional tasks cannot be added.
 
 ### 💻 Console Output (Browsers Dev tools)
 
-- If a task is marked `"done"`, its title and status will be printed:
+- Once all tasks have been added succesfully, the console will print:
 
-  ```
-  Title: "Write report", Status: "done"
-  ```
-
-- If no task(s) are completed, the console log will print:
-
-  ```
-  No tasks completed, let's get to work!
-  ```
+![title prompt](./explainer-images/consolelog.png)
 
 ## 📖 Usage Examples
 
@@ -150,7 +143,7 @@ Each task has 3 prompts:
 
   - Title: `Make corrections to JSL01`
 
-    ![title prompt](./explainer-images/title%20prompt.png)
+    ![title prompt](./explainer-images/consolelog.png)
 
   - Description: `JSL01`
   - Status: `DONE`
